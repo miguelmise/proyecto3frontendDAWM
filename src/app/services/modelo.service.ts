@@ -1,9 +1,12 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Modelo } from '../interfaces/modelo';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ModeloService {
 
   listModelos: Modelo[] = [
@@ -16,7 +19,11 @@ export class ModeloService {
     
   ];
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
+
+  getAllModelos():Observable<any>{
+    return this.http.get<any>('http://localhost:3000/modelo');
+  }
 
   getModelos(){
     return this.listModelos.slice();

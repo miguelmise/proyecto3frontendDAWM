@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
     const usuario = this.form.value.usuario;
     const password = this.form.value.password;
 
-    if(usuario == '1' && password == '1'){
+    if(usuario != '' && password != ''){
       //llamada funcion cargando redirecciono
       this.cargando();
     }else{

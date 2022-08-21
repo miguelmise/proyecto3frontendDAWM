@@ -4,8 +4,8 @@
        "redirect": "/dashboard" 
     },
     {
-        "nombre": "Usuarios",
-        "redirect": "/dashboard/usuarios" 
+        "nombre": "Modelos",
+        "redirect": "/dashboard/modelos" 
      },
      {
         "nombre": "Reportes",

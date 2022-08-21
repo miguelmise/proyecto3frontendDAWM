@@ -7,28 +7,29 @@
       <mat-card id="card">
         <form [formGroup]="form" (ngSubmit)="agregarModelo()">
             <mat-grid-list cols="4" rowHeight="70px">
-                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-grid-tile [colspan]="2" [rowspan]="1">
                     <mat-form-field class="ancho">
                         <mat-label>Modelo</mat-label>
                         <input matInput formControlName="modelo">
                       </mat-form-field>
                 </mat-grid-tile>
-                <mat-grid-tile [colspan]="3" [rowspan]="5" id="imagen">
+                <!--
+                <mat-grid-tile [colspan]="2" [rowspan]="5" id="imagen">
                     <img src="./assets/img/usuarios.png">
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                </mat-grid-tile>-->
+                <mat-grid-tile [colspan]="2" [rowspan]="1">
                     <mat-form-field class="ancho">
                         <mat-label>Precio</mat-label>
                         <input matInput formControlName="precio">
                       </mat-form-field>
                 </mat-grid-tile>
-                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-grid-tile [colspan]="2" [rowspan]="1">
                     <mat-form-field class="ancho">
                         <mat-label>Año</mat-label>
                         <input matInput formControlName="fecha">
                       </mat-form-field>
                 </mat-grid-tile>
-                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-grid-tile [colspan]="2" [rowspan]="1">
                     
                     <mat-form-field class="ancho">
                     <mat-label>Marca</mat-label>
@@ -39,7 +40,7 @@
                     </mat-select>
                     </mat-form-field>
                 </mat-grid-tile>
-                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-grid-tile [colspan]="2" [rowspan]="1">
                     <button mat-raised-button color="primary" [disabled]="form.invalid" class="boton" type="submit">Guardar</button>
                     <button mat-raised-button color="warn" class="boton">Volver</button>
                 </mat-grid-tile>

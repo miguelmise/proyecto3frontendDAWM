@@ -42,7 +42,7 @@ export class CrearComponent implements OnInit {
     }
     console.log(modelo);
     this._modeloService.agregarModelo(modelo);
-    this.router.navigate(['/dashboard/usuarios'])
+    this.router.navigate(['/dashboard/modelos'])
     this._snackBar.open('Modelo Agregado','',{
       duration: 1500,
       horizontalPosition: 'center',
