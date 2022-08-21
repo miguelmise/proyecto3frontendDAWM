@@ -22,7 +22,7 @@ export class ModeloService {
   constructor(private http:HttpClient) { }
 
   getAllModelos():Observable<any>{
-    return this.http.get<any>('http://localhost:3000/modelo');
+    return this.http.get<any>('https://proyecto3express.herokuapp.com/modelo');
   }
 
   getModelos(){
