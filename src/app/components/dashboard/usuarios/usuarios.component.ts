@@ -20,7 +20,7 @@ export class UsuariosComponent implements OnInit {
 
   listModelos: ModeloVehiculo[] = [];
 
-  displayedColumns: string[] = ['nombreMarca', 'nombreModelo', 'paisMarca', 'tipoCombustible','acciones'];
+  displayedColumns: string[] = ['tipo','nombreMarca', 'nombreModelo', 'paisMarca', 'tipoCombustible','acciones'];
   dataSource! : MatTableDataSource<any>;
 
   dataTable! : MatTableDataSource<any>;

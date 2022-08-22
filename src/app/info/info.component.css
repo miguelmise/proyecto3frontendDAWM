@@ -19,16 +19,18 @@ body{
 fieldset{
     border-style: dashed;
     border-color: black;
+    justify-content: space-between;
 }
 
 .cabecera{
-    width: 100%;
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .barra{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    
 }
 
 button{
@@ -37,11 +39,19 @@ button{
     background-color: whitesmoke;
 }
 
-.container-fluid{
+.container-fluid .container-fluid{
     padding: 1em;
-    border-style: dotted;
+    border-style: solid;
 }
 
 p{
-    text-align: justify;
+    text-align: left;
+}
+
+mat-card-footer{
+    text-align: center;
+}
+
+.subtitulo{
+    font-style: italic;
 }

@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container-fluid">
     
     <div class="cabecera">
-        <mat-toolbar class="barra">
+        <mat-toolbar class="barra" color="primary">
             <span>API REST INFORMACION</span>
             <button routerLink="/dashboard" mat-flat-button color="Volver">Atrás</button>
           </mat-toolbar>
@@ -19,16 +19,22 @@
             </mat-card-subtitle>
             <mat-card-content>
                 <div class="container-fluid">
-                    <h3>Mysql (endpoint)</h3>
+                    <h3>Heroku - Mysql (endpoint)</h3>
                     <p><strong>Parametros</strong> ninguno  , <strong>Tipo</strong> : Get    , <strong>Retorno</strong>: Json </p>
-                    <p>Servidor Heroku</p>
-                    <p>GET: https://proyecto3express.herokuapp.com/modelo </p>
-                    <p>GET: https://proyecto3express.herokuapp.com/marca </p>
+
+                    <p class="subtitulo">Consultar por modelo o marca:</p>
+                    <p><a target="_blank" href="https://proyecto3express.herokuapp.com/modelo">GET: https://proyecto3express.herokuapp.com/modelo</a></p>
+                    <p><a target="_blank" href="https://proyecto3express.herokuapp.com/marca">GET: https://proyecto3express.herokuapp.com/marca</a></p>
+                    
                 </div>
                 <div class="container-fluid">
                     <h3>Firebase (endpoint)</h3>
                     <p><strong>Parametros</strong> Numero  , <strong>Tipo</strong> : Get    , <strong>Retorno</strong>: Json </p>
-                    <p>GET: https://proyecto3bdnorelacional-default-rtdb.firebaseio.com/info_modelos.json</p>
+                    <p class="subtitulo">Consultar todos los modelos:</p>
+                    <p><a target="_blank" href="https://proyecto3bdnorelacional-default-rtdb.firebaseio.com/info_modelos.json">GET: https://proyecto3bdnorelacional-default-rtdb.firebaseio.com/info_modelos.json</a></p>
+                    
+                    <p class="subtitulo">Consultar por tipo de modelo:</p>
+                    <p>GET: https://proyecto3bdnorelacional-default-rtdb.firebaseio.com/info_modelos.json?orderBy="idModelo"&equalTo=Aqui_Numero_Modelo</p>
                 </div>
                 
             </mat-card-content>
